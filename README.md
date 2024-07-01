@@ -1,7 +1,7 @@
 <a name="readme-top"></a>
 
 <!--
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `repo_name`, `twitter_handle`, `project_title`, `project_description`
+Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `Tailwind-Animations`, `twitter_handle`, `Tailwind Animations`, `Beautiful Tailwind animations for your app in seconds`
 -->
 
 <!-- PROJECT SHIELDS -->
@@ -23,23 +23,23 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/lorenzopalaia/repo_name">
+  <a href="https://github.com/lorenzopalaia/Tailwind-Animations">
     <img src="repo_assets/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">project_title</h3>
+<h3 align="center">Tailwind Animations</h3>
 
   <p align="center">
-    project_description
+    Beautiful Tailwind animations for your app in seconds
     <br />
-    <a href="https://github.com/lorenzopalaia/repo_name"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/lorenzopalaia/Tailwind-Animations"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/lorenzopalaia/repo_name">View Demo</a>
+    <a href="https://github.com/lorenzopalaia/Tailwind-Animations">View Demo</a>
     ·
-    <a href="https://github.com/lorenzopalaia/repo_name/issues">Report Bug</a>
+    <a href="https://github.com/lorenzopalaia/Tailwind-Animations/issues">Report Bug</a>
     ·
-    <a href="https://github.com/lorenzopalaia/repo_name/issues">Request Feature</a>
+    <a href="https://github.com/lorenzopalaia/Tailwind-Animations/issues">Request Feature</a>
   </p>
 </div>
 
@@ -77,22 +77,15 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 
 [![Product Name Preview][product-preview]](https://example.com)
 
-Full description goes here
+Beautiful Tailwind animations for your app in seconds
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Built With
 
-<!--
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
--->
+[![Node][Node.js]][Node-url]
+<br />
+[![TailwindCSS][TailwindCSS]][TailwindCSS-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -100,32 +93,21 @@ Full description goes here
 
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-This is an example of how to list things you need to use the software and how to install them.
-
-- npm
-  ```sh
-  npm install npm@latest -g
-  ```
-
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Install NPM package:
+
    ```sh
-   git clone https://github.com/lorenzopalaia/repo_name.git
+   npm install @lorenzopalaia/tailwind-animations
    ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
+
+2. Add the plugin to your `tailwind.config.js` file:
+
    ```js
-   const API_KEY = "ENTER YOUR API";
+   plugins: [
+    require('@lorenzopalaia/tailwind-animations'),
+    ...
+   ]
    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -134,22 +116,43 @@ This is an example of how to list things you need to use the software and how to
 
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+### Schema
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+Follow the schema `animation-{name}`, where:
+
+- `name` is the pattern name
+
+For example:
+
+```html
+<div class="animate-rainbow-river">...</div>
+```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- ROADMAP -->
+<!-- ANIMATIONS -->
 
-## Roadmap
+## Patterns
 
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-  - [ ] Nested Feature
+Here's the full list of available animations.
 
-See the [open issues](https://github.com/lorenzopalaia/repo_name/issues) for a full list of proposed features (and known issues).
+### Gradients
+
+Perfect for buttons, hover effects & adding a little magic. All gradients have a duration between 2s - 5s and can be customized to taste
+
+`rainbow-river`, `green-swoosh`, `fuzzy-dream`, `misty-fade`, `hazy-twist`, `mystic-aura`, `black-swoosh`, `tranquil-waters`, `diagonal-blaze`, `diagonal-ocean-wave`, `diagonal-purple-dream`, `diagonal-rotating-sun`, `diagonal-galaxy`, `purple-swoosh`, `blurred-swoosh`, `serene-sunset`, `vibrant-sun`, `shifting-triangles`, `mellow-embers`, `vertical-bliss`, `vertical-raindance`, `vertical-azure-wave`, `vertical-sunset-tide`, `vertical-golden-dream`
+
+### Spaces
+
+Perfect for full screen immersive experiences and backdrops (recommended viewing this on desktop)
+
+`blue-galaxy`, `gray-fluff`, `pastel-dream`, `amethyst-midnight`, `golden-horizon`, `rose-blush`, `lavender-dream`, `pink-blossom`, `cosmic-wave`, `glow-next-door`, `ski-haze`
+
+### Classics
+
+Perfect for fun & simple interactivity. Similar to `animate-spin`, `animate-ping`, `animate-pulse`, `animate-bounce` classes from Tailwind.
+
+`wobble`, `melt`, `float`, `breathe`, `squiggle`, `flip-and-spin`, `twist`, `pop`, `scatter`, `morphing-rectangle`
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -184,7 +187,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Lorenzo Palaia <!-- - [@twitter_handle](https://twitter.com/twitter_handle)--> - lorenzopalaia53@gmail.com
 
-Project Link: [https://github.com/lorenzopalaia/repo_name](https://github.com/lorenzopalaia/repo_name)
+Project Link: [https://github.com/lorenzopalaia/Tailwind-Animations](https://github.com/lorenzopalaia/Tailwind-Animations)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -202,16 +205,16 @@ Project Link: [https://github.com/lorenzopalaia/repo_name](https://github.com/lo
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[contributors-shield]: https://img.shields.io/github/contributors/lorenzopalaia/repo_name.svg?style=for-the-badge
-[contributors-url]: https://github.com/lorenzopalaia/repo_name/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/lorenzopalaia/repo_name.svg?style=for-the-badge
-[forks-url]: https://github.com/lorenzopalaia/repo_name/network/members
-[stars-shield]: https://img.shields.io/github/stars/lorenzopalaia/repo_name.svg?style=for-the-badge
-[stars-url]: https://github.com/lorenzopalaia/repo_name/stargazers
-[issues-shield]: https://img.shields.io/github/issues/lorenzopalaia/repo_name.svg?style=for-the-badge
-[issues-url]: https://github.com/lorenzopalaia/repo_name/issues
-[license-shield]: https://img.shields.io/github/license/lorenzopalaia/repo_name.svg?style=for-the-badge
-[license-url]: https://github.com/lorenzopalaia/repo_name/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/lorenzopalaia/Tailwind-Animations.svg?style=for-the-badge
+[contributors-url]: https://github.com/lorenzopalaia/Tailwind-Animations/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/lorenzopalaia/Tailwind-Animations.svg?style=for-the-badge
+[forks-url]: https://github.com/lorenzopalaia/Tailwind-Animations/network/members
+[stars-shield]: https://img.shields.io/github/stars/lorenzopalaia/Tailwind-Animations.svg?style=for-the-badge
+[stars-url]: https://github.com/lorenzopalaia/Tailwind-Animations/stargazers
+[issues-shield]: https://img.shields.io/github/issues/lorenzopalaia/Tailwind-Animations.svg?style=for-the-badge
+[issues-url]: https://github.com/lorenzopalaia/Tailwind-Animations/issues
+[license-shield]: https://img.shields.io/github/license/lorenzopalaia/Tailwind-Animations.svg?style=for-the-badge
+[license-url]: https://github.com/lorenzopalaia/Tailwind-Animations/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/lorenzopalaia
 [product-preview]: repo_assets/preview.png
@@ -231,3 +234,7 @@ Project Link: [https://github.com/lorenzopalaia/repo_name](https://github.com/lo
 [Bootstrap-url]: https://getbootstrap.com
 [JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
 [JQuery-url]: https://jquery.com
+[Node.js]: https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white
+[Node-url]: https://nodejs.org/
+[TailwindCSS]: https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white
+[TailwindCSS-url]: https://tailwindcss.com/

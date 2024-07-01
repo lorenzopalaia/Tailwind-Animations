@@ -1,0 +1,39 @@
+{
+  "name": "@lorenzopalaia/tailwind-animations",
+  "version": "1.0.0",
+  "description": "Beautiful Tailwind animations for your app in seconds",
+  "main": "src/index.js",
+  "author": {
+    "name": "Lorenzo Palaia",
+    "email": "lorenzopalaia53@gmail.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lorenzopalaia/Tailwind-Animations.git"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
+  "keywords": [
+    "tailwind",
+    "animations",
+    "css",
+    "library",
+    "utilities",
+    "transition",
+    "keyframes",
+    "motion",
+    "effects",
+    "web",
+    "design"
+  ],
+  "bugs": {
+    "url": "https://github.com/lorenzopalaia/Tailwind-Animations/issues"
+  },
+  "homepage": "https://github.com/lorenzopalaia/Tailwind-Animations#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.0.0"
+  }
+}
