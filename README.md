@@ -35,7 +35,7 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
     <a href="https://github.com/lorenzopalaia/Tailwind-Animations"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/lorenzopalaia/Tailwind-Animations">View Demo</a>
+    <a href="https://play.tailwindcss.com/F9TqVwDeHLs">View Demo</a>
     ·
     <a href="https://github.com/lorenzopalaia/Tailwind-Animations/issues">Report Bug</a>
     ·
